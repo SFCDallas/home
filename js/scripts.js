@@ -51,9 +51,9 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for worship items
+    // Activate SimpleLightbox plugin for church items
     new SimpleLightbox({
-        elements: '#worship a.worship-box'
+        elements: '#church a.church-box'
     });
 
 });

@@ -10929,7 +10929,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/openchurch-1012106-CC0-evie-shaffer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10958,14 +10958,14 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#worship .container-fluid, #worship .container-sm, #worship .container-md, #worship .container-lg, #worship .container-xl, #worship .container-xxl {
+#church .container-fluid, #church .container-sm, #church .container-md, #church .container-lg, #church .container-xl, #church .container-xxl {
   max-width: 1920px;
 }
-#worship .container-fluid .worship-box, #worship .container-sm .worship-box, #worship .container-md .worship-box, #worship .container-lg .worship-box, #worship .container-xl .worship-box, #worship .container-xxl .worship-box {
+#church .container-fluid .church-box, #church .container-sm .church-box, #church .container-md .church-box, #church .container-lg .church-box, #church .container-xl .church-box, #church .container-xxl .church-box {
   position: relative;
   display: block;
 }
-#worship .container-fluid .worship-box .worship-box-caption, #worship .container-sm .worship-box .worship-box-caption, #worship .container-md .worship-box .worship-box-caption, #worship .container-lg .worship-box .worship-box-caption, #worship .container-xl .worship-box .worship-box-caption, #worship .container-xxl .worship-box .worship-box-caption {
+#church .container-fluid .church-box .church-box-caption, #church .container-sm .church-box .church-box-caption, #church .container-md .church-box .church-box-caption, #church .container-lg .church-box .church-box-caption, #church .container-xl .church-box .church-box-caption, #church .container-xxl .church-box .church-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10981,15 +10981,15 @@ header.masthead h1, header.masthead .h1 {
   transition: opacity 0.25s ease;
   text-align: center;
 }
-#worship .container-fluid .worship-box .worship-box-caption .project-category, #worship .container-sm .worship-box .worship-box-caption .project-category, #worship .container-md .worship-box .worship-box-caption .project-category, #worship .container-lg .worship-box .worship-box-caption .project-category, #worship .container-xl .worship-box .worship-box-caption .project-category, #worship .container-xxl .worship-box .worship-box-caption .project-category {
+#church .container-fluid .church-box .church-box-caption .project-category, #church .container-sm .church-box .church-box-caption .project-category, #church .container-md .church-box .church-box-caption .project-category, #church .container-lg .church-box .church-box-caption .project-category, #church .container-xl .church-box .church-box-caption .project-category, #church .container-xxl .church-box .church-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-#worship .container-fluid .worship-box .worship-box-caption .project-name, #worship .container-sm .worship-box .worship-box-caption .project-name, #worship .container-md .worship-box .worship-box-caption .project-name, #worship .container-lg .worship-box .worship-box-caption .project-name, #worship .container-xl .worship-box .worship-box-caption .project-name, #worship .container-xxl .worship-box .worship-box-caption .project-name {
+#church .container-fluid .church-box .church-box-caption .project-name, #church .container-sm .church-box .church-box-caption .project-name, #church .container-md .church-box .church-box-caption .project-name, #church .container-lg .church-box .church-box-caption .project-name, #church .container-xl .church-box .church-box-caption .project-name, #church .container-xxl .church-box .church-box-caption .project-name {
   font-size: 1.2rem;
 }
-#worship .container-fluid .worship-box:hover .worship-box-caption, #worship .container-sm .worship-box:hover .worship-box-caption, #worship .container-md .worship-box:hover .worship-box-caption, #worship .container-lg .worship-box:hover .worship-box-caption, #worship .container-xl .worship-box:hover .worship-box-caption, #worship .container-xxl .worship-box:hover .worship-box-caption {
+#church .container-fluid .church-box:hover .church-box-caption, #church .container-sm .church-box:hover .church-box-caption, #church .container-md .church-box:hover .church-box-caption, #church .container-lg .church-box:hover .church-box-caption, #church .container-xl .church-box:hover .church-box-caption, #church .container-xxl .church-box:hover .church-box-caption {
   opacity: 1;
 }

@@ -422,7 +422,11 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
+  appearance: button;
   -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
 }
 
 button:not(:disabled),
@@ -482,8 +486,12 @@ legend+* {
 }
 
 [type=search] {
+  appearance: searchfield;
+  -webkit-appearance: searchfield;
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  -moz-appearance: searchfield;
+  -ms-appearance: searchfield;
+  -o-appearance: searchfield;
 }
 
 /* rtl:raw:
@@ -503,8 +511,11 @@ legend+* {
 }
 
 ::file-selector-button {
-  font: inherit;
+  appearance: button;
   -webkit-appearance: button;
+  -moz-appearance: button;
+  -ms-appearance: button;
+  -o-appearance: button;
 }
 
 output {

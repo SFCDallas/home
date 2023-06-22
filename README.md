@@ -1,3 +1,3 @@
-# [SFCD.github.io](https://stevenpjohnso.github.io/sfcd.github.io/)
+# [SFCD Site](https://stevenpjohnso.github.io/SFCD/)
 
 A GitHub Page For Sharon Fellowship Church of Dallas

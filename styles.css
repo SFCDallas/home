@@ -4420,6 +4420,23 @@ fieldset:disabled .btn {
   background-size: 100%;
 }
 
+.navbar-toggler {
+  transform-style: preserve-3d;
+  /* Preserve the 3D transformation */
+  transition: transform 0.5s;
+  /* Add a transition for smooth animation */
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler.flipped {
+  transform: perspective(1000px) rotateX(180deg);
+  /* Apply the flipped state */
+}
+
 .navbar-nav-scroll {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;

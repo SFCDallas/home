@@ -56,4 +56,20 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#church a.church-box'
     });
 
+    // Menu clicked
+    const button = document.querySelector('.navbar-toggler');
+    let isFlipped = false; // Track the state of the button
+
+    button.addEventListener('click', function () {
+        isFlipped = !isFlipped; // Toggle the state
+
+        // Apply the 'flipped' class based on the state
+        if (isFlipped) {
+            this.classList.add('flipped');
+        } else {
+            this.classList.remove('flipped');
+        }
+    });
+
+
 });

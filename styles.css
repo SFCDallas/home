@@ -4422,9 +4422,7 @@ fieldset:disabled .btn {
 
 .navbar-toggler {
   transform-style: preserve-3d;
-  /* Preserve the 3D transformation */
   transition: transform 0.5s;
-  /* Add a transition for smooth animation */
   display: inline-block;
   background-color: transparent;
   border: none;
@@ -4434,7 +4432,6 @@ fieldset:disabled .btn {
 
 .navbar-toggler.flipped {
   transform: perspective(1000px) rotateX(180deg);
-  /* Apply the flipped state */
 }
 
 .navbar-nav-scroll {
@@ -12974,4 +12971,11 @@ header.masthead .h1 {
 
 .btn i {
   margin-right: 10px;
+}
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }

@@ -12956,3 +12956,7 @@ header.masthead .h1 {
   height: 100%;
   object-fit: cover;
 }
+
+.btn i {
+  margin-right: 10px;
+}

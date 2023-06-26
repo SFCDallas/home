@@ -72,30 +72,34 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 });
 
-    // animations
-    document.addEventListener("DOMContentLoaded", function(event) {
-        var fadeContainer = document.querySelector(".fade-in-site");
-        fadeContainer.style.display = "block"; // Show the container
-        
-        setTimeout(function() {
-          fadeContainer.classList.add("fade-in"); // Add the fade-in class
-        }, 100);
-      });      
+// animations
+document.addEventListener("DOMContentLoaded", function (event) {
+    var fadeContainer = document.querySelector(".fade-in-site");
+    fadeContainer.style.display = "block"; // Show the container
 
-    window.addEventListener("scroll", function() {
-        var fadeElement = document.querySelector(".fade-element");
-        var elementOffset = fadeElement.offsetTop;
-        var elementHeight = fadeElement.offsetHeight;
-        var windowHeight = window.innerHeight;
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
+    setTimeout(function () {
+        fadeContainer.classList.add("fade-in"); // Add the fade-in class
+    }, 50);
+});
+
+window.addEventListener("scroll", function () {
+    var fadeElements = document.querySelectorAll(".fade-element");
+    var windowHeight = window.innerHeight;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    fadeElements.forEach(function (element) {
+        var elementOffset = element.offsetTop;
+        var elementHeight = element.offsetHeight;
+
         var scrollCenter = scrollTop + windowHeight / 2;
         var elementCenter = elementOffset + elementHeight / 2;
         var distanceFromCenter = Math.abs(scrollCenter - elementCenter);
         var maxDistance = windowHeight / 2;
-      
+
         var opacity = 1 - (distanceFromCenter / maxDistance);
-      
+
         if (opacity >= 0.5 && opacity <= 1) {
-          fadeElement.style.opacity = opacity;
-        }})
+            element.style.opacity = opacity;
+        }
+    });
+});

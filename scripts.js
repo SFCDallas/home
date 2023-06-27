@@ -96,9 +96,15 @@ window.addEventListener("scroll", function () {
         var distanceFromCenter = Math.abs(scrollCenter - elementCenter);
         var maxDistance = windowHeight / 2;
 
-        var opacity = 1 - (distanceFromCenter / maxDistance);
+        var opacity = 1;
 
-        if (opacity >= 0.5 && opacity <= 1) {
+        if (distanceFromCenter > maxDistance * 0.75) {
+            opacity = 0.25;
+        } else if (distanceFromCenter > maxDistance * 0.5) {
+            opacity = 1 - (distanceFromCenter - maxDistance * 0.5) / (maxDistance * 0.25);
+        }
+
+        if (opacity >= 0.25 && opacity <= 1) {
             element.style.opacity = opacity;
         }
     });

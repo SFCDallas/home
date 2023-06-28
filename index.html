@@ -2,6 +2,25 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PWTBQ7P');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDZ278GNF7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MDZ278GNF7');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0," />
     <meta name="description" content="" />
@@ -22,6 +41,10 @@
 </head>
 
 <body class="fade-in-site" id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWTBQ7P" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -292,9 +315,9 @@
             <div class="row gx-2 gx-lg-5 justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h2 class="text-white mb-2 mt-0">Calendar</h2>
-                    <iframe class="fade-element mt-3" src="https://embed.styledcalendar.com/#TtJRu36zInEUB3K4EIMv" title="Styled Calendar"
-                        class="styled-calendar-container" style="width: 100%; height: 700px; border: none;"
-                        data-cy="calendar-embed-iframe"></iframe>
+                    <iframe class="fade-element mt-3" src="https://embed.styledcalendar.com/#TtJRu36zInEUB3K4EIMv"
+                        title="Styled Calendar" class="styled-calendar-container"
+                        style="width: 100%; height: 700px; border: none;" data-cy="calendar-embed-iframe"></iframe>
                     <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
                 </div>
             </div>
@@ -337,9 +360,9 @@
     <!-- Smooth scroll -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Smooth scrolling when clicking on navigation links
-            $('a[href^="#"]').on('click', function(event) {
+            $('a[href^="#"]').on('click', function (event) {
                 var target = $(this.getAttribute('href'));
                 if (target.length) {
                     event.preventDefault();

@@ -12767,7 +12767,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("assets/img/openchurch-1012106-CC0-evie-shaffer.jpg");
+  background: linear-gradient(to bottom, rgba(51, 102, 255, 0.4) 0%, rgba(108, 117, 125, 0.8) 100%), url("assets/img/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

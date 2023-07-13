@@ -199,6 +199,55 @@ p {
   margin-bottom: 1rem;
 }
 
+
+/* animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 500ms ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 500ms ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-container {
+  min-height: 25%;
+  /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.fade-element {
+  opacity: 0;
+  transition: opacity 100ms ease;
+}
+
+.fade-in-site {
+  background-color: black;
+  display: none;
+  /* Initially hide the container */
+}
+
 abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -2479,7 +2528,6 @@ fieldset:disabled .btn {
 .collapsing {
   height: 0;
   overflow: hidden;
-  transition: height 0.35s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2491,7 +2539,6 @@ fieldset:disabled .btn {
 .collapsing.collapse-horizontal {
   width: 0;
   height: auto;
-  transition: width 0.35s ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3005,10 +3052,10 @@ fieldset:disabled .btn {
 
 @media (max-width: 150px) {
   .navbar-toggler {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -3246,7 +3293,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-toggler:hover {
-  text-decoration: none;
+  color: white;
 }
 
 .navbar-toggler:focus {
@@ -3595,6 +3642,8 @@ fieldset:disabled .btn {
 .navbar-expand .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-expand .navbar-toggler {
@@ -11387,6 +11436,48 @@ hr.divider-light {
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(1) .nav-link {
+  animation-delay: 0s;
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(2) .nav-link {
+  animation-delay: 20ms;
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(3) .nav-link {
+  animation-delay: 40ms;
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(4) .nav-link {
+  animation-delay: 60ms;
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(5) .nav-link {
+  animation-delay: 80ms;
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(6) .nav-link {
+  animation-delay: 100ms;
+}
+
+#mainNav .navbar-nav .nav-item:nth-child(7) .nav-link {
+  animation-delay: 120ms;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover,
@@ -11395,7 +11486,7 @@ hr.divider-light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #ff5555 !important;
+  color: var(--bs-red) !important;
 }
 
 @media (min-width: 992px) {
@@ -11509,7 +11600,7 @@ header.masthead {
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.5rem;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 @media (min-width: 992px) {
@@ -11714,50 +11805,4 @@ header.masthead .h1 {
   height: auto;
   margin: 0 auto;
   display: block;
-}
-
-/* animations */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 500ms ease-in forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-out {
-  opacity: 1;
-  animation: fadeOut 500ms ease-out forwards;
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.fade-container {
-  min-height: 25%; /* Adjust height as needed */
-  overflow: hidden;
-}
-
-.fade-element {
-  opacity: 0;
-  transition: opacity 100ms ease;
-}
-
-.fade-in-site {
-  background-color: black;
-  display: none; /* Initially hide the container */
 }

@@ -2250,8 +2250,8 @@ fieldset:disabled .btn {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: #d8d8d8;
-  --bs-btn-border-color: #d8d8d8;
+  --bs-btn-bg: #ffffffe6;
+  --bs-btn-border-color: #ffffffe6;
   --bs-btn-hover-color: #1b1b1b;
   --bs-btn-hover-bg: #fff;
   --bs-btn-hover-border-color: #fff;
@@ -7971,6 +7971,12 @@ fieldset:disabled .btn {
 
 .rounded-circle {
   border-radius: 50% !important;
+}
+
+.resize-img-150 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .rounded-pill {

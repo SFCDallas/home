@@ -94,7 +94,7 @@ window.addEventListener("scroll", function () {
         var scrollCenter = scrollTop + windowHeight / 2;
         var elementCenter = elementOffset + elementHeight / 2;
         var distanceFromCenter = Math.abs(scrollCenter - elementCenter);
-        var maxDistance = windowHeight / 2;
+        var maxDistance = windowHeight * 0.75;
 
         var opacity = 1;
 

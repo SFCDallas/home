@@ -22,17 +22,22 @@
         gtag('config', 'G-EYVTRCH8R4');
     </script>
     <!-- Smooth scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Smooth scrolling when clicking on navigation links
             $('a[href^="#"]').on('click', function (event) {
                 var target = $(this.getAttribute('href'));
                 if (target.length) {
                     event.preventDefault();
+                    var scrollSpeed = 100;
                     $('html, body').stop().animate({
                         scrollTop: target.offset().top
-                    }, 500);
+                    }, scrollSpeed);
                 }
             });
         });

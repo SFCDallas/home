@@ -70,7 +70,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top"><img src="assets/favicon.png" alt="SFCD Logo">SFCD</a>
+            <a class="navbar-brand" href="index.html"><img src="assets/favicon.png" alt="SFCD Logo">SFCD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Open or close menu">
                 <i class="bi-chevron-down" style="font-size: 1.5rem;"></i>
@@ -92,8 +92,98 @@
     <!-- About -->
     <section class="page-section bg-dark text-white" id="about">
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">About Us</h2>
+            <h1 class="text-center mt-0">About Our Church</h1>
             <hr class="divider" />
+
+        </div>
+    </section>
+
+    <!-- Service Times / Watch Live -->
+    <section class="page-section bg-primary" id="history">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">History</h2><br>
+                    <h5 class="text-light font-weight-bold mb-5">OUR JOURNEY:</h5>
+                    <h5 class="text-light mb-5">The Sharon Fellowship Church of Dallas has a rich and inspiring history, beginning with a small group of dedicated individuals seeking to create a vibrant spiritual community in the heart of Mesquite, Texas.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Founding Moments:</h5>
+                    <h5 class="text-light mb-5">Inaugurated on a significant day, Sunday, October 12th, 1997, by the late Rev. K. V. Johnson (NY), our first worship service was held at the home of Bro. Roy Abraham on Wayfaring St., Mesquite. The church's founding members included families like Brothers Roy Abraham, Finny Varughese, Raju John, Joseph T. Joseph, and John M. Varughese.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Early Leadership:</h5>
+                    <h5 class="text-light mb-5">During our initial stages, we didn't have an official pastor, but the spiritual guidance of pastors M. D. Samuel (Punjab, India), Abraham Joseph, and Paul Gopalakrishnan (Kerala, India) helped us conduct services. After three months of services in the house, we ventured into various rental spaces.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Pastoral Leadership:</h5>
+                    <h5 class="text-light mb-5">In July of 1998, an important chapter unfolded as Rev. Mathews Daniel assumed the role of our first full-time pastor, bringing stability, spiritual growth, and pastoral care to our church family.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Embracing Growth:</h5>
+                    <h5 class="text-light mb-5">From the very beginning, we've had a fervent focus on the spiritual development of our younger generation. We launched Sunday School and youth programs simultaneously with the inception of the church.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Impactful Initiatives:</h5>
+                    <h5 class="text-light mb-5">The Sharon Fellowship Church of Dallas pioneered the Sharon Family Conferences in the United States, hosting the first SFCNA family conference in Dallas in September 2000. This endeavor blossomed, leading to subsequent conferences in 2006, 2009, and 2016. In 2013, we also successfully organized the SFCNA Youth Conference.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Building for God's Glory:</h5>
+                    <h5 class="text-light mb-5">In the year 2000, through God's grace, despite our modest numbers, we were blessed to acquire 4.04 acres of land in the heart of Mesquite. This land became the foundation for our beautiful sanctuary, completed in April 2006. The dedication ceremony was a remarkable day in our history, led by Rev. Dr. T. G. Koshy, then president of Sharon Fellowship Churches.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Honoring Our Leaders:</h5>
+                    <h5 class="text-light mb-5">We hold in gratitude the memory of our former pastors, including Pastors Mathews Daniel, Kuruvila Varghese, M. G. Johnson, Shibu Thomas, Viju Joseph, and Sabu George. Their dedication and service have played a vital role in our spiritual growth.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">Mission Heart:</h5>
+                    <h5 class="text-light mb-5">From the outset, we've been passionate about mission work, supporting various mission fields in India and locally.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">A Growing Family:</h5>
+                    <h5 class="text-light mb-5">Through the years, our church family has grown, and we now have 45 families united in worship. We're excited about the ongoing construction of a 16,000 sq. ft. multi-purpose building on the remaining land adjacent to our sanctuary, all for the glory of our Almighty God.</h5>
+                    <h5 class="text-light font-weight-bold mb-5">A Beacon of Hope:</h5>
+                    <h5 class="text-light mb-5">We continue to aspire to be a city upon a hill, radiating God's light, bringing glory to His name. Let's join in prayer, believing that God will continue to use us for His kingdom, empowering us to make a positive impact in the years to come.</h5>
+                    <hr class="divider-dark" />
+                    <div class="row gx-4 gx-lg-5" id="more" style="display: none;">
+                        <div class="text-center mt-5 mb-5">
+                            <a class="btn btn-light btn-xl" id="myBtnLink" onclick="myFunction(); return false;"><i
+                                    class="bi bi-book margin-10px-right"></i><span id="btnText">Read More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function myFunction() {
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("btnText");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "flex";
+                btnText.innerHTML = "Shrink";
+            } else {
+                moreText.style.display = "none";
+                btnText.innerHTML = "Read More";
+            }
+        }
+    </script>
+
+    <!-- New Here -->
+    <section class="page-section bg-black fade-container" id="mission">
+        <div class="container px-4 px-lg-5 fade-element">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">Mission & Vision</h2>
+                    <h2 class="text-white mt-3"><strong>OUR MISSION</strong></h2>
+                    <h3 class="text-white mt-3">At Sharon Fellowship, Dallas, our mission is to empower individuals of
+                        all ages, nurturing their spiritual growth, fostering social connections, and nurturing
+                        leadership skills. Our goal is to raise a generation of Ambassadors for the Kingdom of God who
+                        are steadfast in their faith, undeterred by the ever-changing world, and committed to
+                        transforming it positively.</h3>
+                    <hr class="divider" />
+                    <h2 class="text-white mt-3"><strong>OUR VISION</strong></h2>
+                    <h3 class="text-white mt-3">We envision a community where everyone, from the youngest to the oldest,
+                        feels the warmth of God's love. We aim to be a church that stands as a beacon of faith,
+                        inspiring and uplifting those within our congregation and reaching out to those outside, sharing
+                        the message of salvation, hope, and love.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-dark text-white" id="beliefs">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <i class="bi-heart fs-2 mb-5 text-light"></i><br>
+                    <h2 class="mb-2 mt-0">Our Beliefs</h2>
+                </div>
+            </div>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-3">
@@ -122,56 +212,6 @@
                         <h3 class="h4 mb-2">John 3:16</h3>
                         <p class="text-light mb-0">Serving the community since 1997!</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Times / Watch Live -->
-    <section class="page-section bg-primary fade-container" id="history">
-        <div class="container px-4 px-lg-5 fade-element">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">History</h2><br>
-                    <h5 class="text-light font-weight-bold mb-5">At Sharon Fellowship, Dallas, our mission is to empower individuals of all ages, nurturing their spiritual growth, fostering social connections, and nurturing leadership skills. Our goal is to raise a generation of Ambassadors for the Kingdom of God who are steadfast in their faith, undeterred by the ever-changing world, and committed to transforming it positively.</h5>
-                    <hr class="divider-dark" />
-                    <h6 class="text-white mb-4"><strong>Watch Live!</strong></h6>
-                    <a class="btn btn-dark btn-xl" href="https://youtube.com/@SFCDallas" target="_blank"><i
-                            class="bi bi-youtube margin-10px-right"></i>YouTube</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Here -->
-    <section class="page-section bg-black fade-container" id="mission">
-        <div class="container px-4 px-lg-5 fade-element">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">Mission & Vision</h2>
-                    <h2 class="text-white mt-3"><strong>Welcome!</strong></h2>
-                    <h1>🎉</h1>
-                    <h3 class="text-white mt-3">We hope that God blesses you and your family!</h3>
-                    <hr class="divider" />
-                    <a class="btn btn-dark btn-xl" href="#about"><i class="bi bi-book"></i>About Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="page-section bg-dark text-white" id="beliefs">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <i class="bi-heart fs-2 mb-5 text-light"></i><br>
-                    <h2 class="mb-2 mt-0">Beliefs</h2>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <h5><strong>940 Barnes Bridge Rd<br>Mesquite, TX 75150</strong></h5><br>
-                    <a class="btn btn-light btn-xl" href="https://goo.gl/maps/qzL4NGt68Wr7EcUt7" target="_blank"><i
-                            class="bi bi-globe-americas margin-10px-right"></i>Google Maps</a>
                 </div>
             </div>
         </div>
@@ -212,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row gx-4 gx-lg-5" id="more" style="display: none;">
+            <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <img class="rounded-circle resize-img-150 mb-2" src="assets/img/leadership/0.png" />
@@ -280,31 +320,12 @@
                     <div class="mt-5">
                         <img class="rounded-circle resize-img-150 mb-2" src="assets/img/leadership/0.png" />
                         <h3 class="h4 mb-2">Br. Sangeeth Shaji</h3>
-                        <p class="text-light mb-0">Committee Member</p>
+                        <p class="text-light mb-0">Committee Member</p><br>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5 mb-5">
-                <a class="btn btn-light btn-xl" id="myBtnLink" onclick="myFunction(); return false;"><i
-                        class="bi bi-book margin-10px-right"></i><span id="btnText">Read More</span></a>
-            </div>
         </div>
     </section>
-
-    <script>
-        function myFunction() {
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("btnText");
-
-            if (moreText.style.display === "none") {
-                moreText.style.display = "flex";
-                btnText.innerHTML = "Shrink";
-            } else {
-                moreText.style.display = "none";
-                btnText.innerHTML = "Read More";
-            }
-        }
-    </script>
 
     <!-- Pictures -->
     <div id="pic">

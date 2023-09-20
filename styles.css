@@ -11513,7 +11513,7 @@ header.masthead h1 {
     position: absolute;
     right: 5%;
     top: 30px;
-    background-color: rgba(25, 47, 89);
+    background-color: var(--bs-primary);
     color: #fff;
     padding: 12px 20px 12px 20px;
     text-transform: uppercase

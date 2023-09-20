@@ -27,7 +27,7 @@
             scroll-behavior: smooth;
         }
     </style>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
             $('a[href^="#"]').on('click', function (event) {
@@ -50,11 +50,13 @@
     <!-- Favicon-->
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <!-- SimpleLightbox plugin CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap) -->
@@ -193,6 +195,10 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center">
+                <br><br>
+                <a class="btn btn-light btn-xl" href="about.html"><i class="bi bi-book"></i>Our Story</a>
+            </div>
         </div>
     </section>
     <section class="bg-primary text-white fade-container">
@@ -315,7 +321,7 @@
 
             if (moreText.style.display === "none") {
                 moreText.style.display = "flex";
-                btnText.innerHTML = "Read Less";
+                btnText.innerHTML = "Shrink";
             } else {
                 moreText.style.display = "none";
                 btnText.innerHTML = "Read More";
@@ -323,61 +329,61 @@
         }
     </script>
 
-    <!-- Church Pictures -->
-    <div id="church">
+    <!-- Pictures -->
+    <div id="pic">
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="church-box" href="assets/img/church/fullsize/1.jpg" title="940A">
-                        <img class="img-fluid" src="assets/img/church/thumbnails/1.jpg" alt="..." />
-                        <div class="church-box-caption">
+                    <a class="pic-box" href="assets/img/pic/fullsize/1.jpg" title="940A">
+                        <img class="img-fluid" src="assets/img/pic/thumbnails/1.jpg" alt="..." />
+                        <div class="pic-box-caption">
                             <div class="project-category text-white-50">SFCD</div>
                             <div class="project-name">Main Building</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="church-box" href="assets/img/church/fullsize/2.jpg" title="Praise & Worship">
-                        <img class="img-fluid" src="assets/img/church/thumbnails/2.jpg" alt="..." />
-                        <div class="church-box-caption">
+                    <a class="pic-box" href="assets/img/pic/fullsize/2.jpg" title="Praise & Worship">
+                        <img class="img-fluid" src="assets/img/pic/thumbnails/2.jpg" alt="..." />
+                        <div class="pic-box-caption">
                             <div class="project-category text-white-50">SFCD</div>
                             <div class="project-name">Malayalam Praise and Worship</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="church-box" href="assets/img/church/fullsize/3.jpg"
+                    <a class="pic-box" href="assets/img/pic/fullsize/3.jpg"
                         title="Youth in Fellowship Hall (Main Hall)">
-                        <img class="img-fluid" src="assets/img/church/thumbnails/3.jpg" alt="..." />
-                        <div class="church-box-caption">
+                        <img class="img-fluid" src="assets/img/pic/thumbnails/3.jpg" alt="..." />
+                        <div class="pic-box-caption">
                             <div class="project-category text-white-50">SFCD</div>
                             <div class="project-name">Twist and Turns</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="church-box" href="assets/img/church/fullsize/4.jpg"
+                    <a class="pic-box" href="assets/img/pic/fullsize/4.jpg"
                         title="The Baptism of Esther Thomas, Sunday July 16, 2023">
-                        <img class="img-fluid" src="assets/img/church/thumbnails/4.jpg" alt="..." />
-                        <div class="church-box-caption">
+                        <img class="img-fluid" src="assets/img/pic/thumbnails/4.jpg" alt="..." />
+                        <div class="pic-box-caption">
                             <div class="project-category text-white-50">SFCD</div>
                             <div class="project-name">Baptism</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="church-box" href="assets/img/church/fullsize/5.jpg" title="Vacation Bible School (VBS)">
-                        <img class="img-fluid" src="assets/img/church/thumbnails/5.jpg" alt="..." />
-                        <div class="church-box-caption">
+                    <a class="pic-box" href="assets/img/pic/fullsize/5.jpg" title="Vacation Bible School (VBS)">
+                        <img class="img-fluid" src="assets/img/pic/thumbnails/5.jpg" alt="..." />
+                        <div class="pic-box-caption">
                             <div class="project-category text-white-50">SFCD</div>
                             <div class="project-name">Twist and Turns</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="church-box" href="assets/img/church/fullsize/6.jpg" title="940B">
-                        <img class="img-fluid" src="assets/img/church/thumbnails/6.jpg" alt="..." />
-                        <div class="church-box-caption p-3">
+                    <a class="pic-box" href="assets/img/pic/fullsize/6.jpg" title="940B">
+                        <img class="img-fluid" src="assets/img/pic/thumbnails/6.jpg" alt="..." />
+                        <div class="pic-box-caption p-3">
                             <div class="project-category text-white-50">SFCD</div>
                             <div class="project-name">Fellowship Hall<br>Now Open</div>
                         </div>

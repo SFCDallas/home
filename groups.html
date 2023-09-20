@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PWTBQ7P');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYVTRCH8R4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EYVTRCH8R4');
+    </script>
+    <!-- Smooth scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    var scrollSpeed = 100;
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, scrollSpeed);
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0," />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>SFCD > Groups</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,700," rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body class="fade-in-site" id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWTBQ7P" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html"><img src="assets/favicon.png" alt="SFCD Logo">SFCD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Open or close menu">
+                <i class="bi-chevron-down" style="font-size: 1.5rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#youth">YOUTH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fam">FAMILIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sis">SISTERS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bro">BROTHERS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#event">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#in">GET INVOLVED</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section bg-black text-white">
+        <div class="container px-4 px-lg-5">
+            <h1 class="text-center mt-0">Our Ministries and Small Groups</h1>
+            <hr class="divider" />
+        </div>
+    </section>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img class="img-fluid" src="assets/img/pic/fullsize/2.jpg" alt="..." /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="assets/img/pic/fullsize/3.jpg" alt="..." /></div>
+            <div class="swiper-slide"><img class="img-fluid" src="assets/img/pic/fullsize/4.jpg" alt="..." /></div>
+            <div class="swiper-slide margin-10px-bottom"><img class="img-fluid" src="assets/img/pic/fullsize/5.jpg"
+                    alt="..." /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <section class="page-section bg-black">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white m-4"><strong>Sign Up Now!</strong></h2>
+                    <a class="btn btn-light btn-xl" href="https://forms.gle/36ewGtsj7Pd4szBR8">Group forms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events card-->
+    <section class="page-section bg-dark text-white" id="event">
+        <div class="fade-container container text-center mt-0">
+            <h2>Events</h2><br>
+            <!-- start event block -->
+            <div class="row align-items-center event-block fade-element">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="padding-60px-lr md-padding-50px-lr sm-padding-30px-all xs-padding-25px-all">
+                        <h2
+                            class="margin-15px-bottom md-margin-10px-bottom font-size22 md-font-size20 xs-font-size18 font-weight-500">
+                            Talent Night
+                        </h2>
+                        <ul class="event-time margin-10px-bottom md-margin-5px-bottom">
+                            <li><i class="bi-clock margin-10px-right"></i> 7 - 9 PM</li>
+                            <li><i class="bi-calendar margin-10px-right"></i> Sat</li>
+                            <li><i class="bi-geo-alt margin-10px-right"></i> SFCD</li>
+                            <li><i class="bi-person margin-10px-right"></i> For All Ages!</li>
+                        </ul>
+                        <p>Join Us for an Exciting Night of Faith, Laughs, and Fellowship.</p>
+                        <a class="btn btn-dark btn-xl"
+                            href="https://docs.google.com/spreadsheets/d/1hff9n8R-WLY9QyIfi2DqDRHwN4p41nHDS3H0bVrvXZo/edit?usp=sharing"><i
+                                class="bi bi-box-arrow-up-right margin-10px-right"></i>Sign Up</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="position-relative">
+                        <div class="position-relative text-center">
+                            <a
+                                href="https://docs.google.com/spreadsheets/d/1hff9n8R-WLY9QyIfi2DqDRHwN4p41nHDS3H0bVrvXZo/edit?usp=sharing"><img
+                                    src="assets/img/background.png" alt="banner" class="event-image"></a>
+                        </div>
+                        <div class="events-date">
+                            <div class="font-size28">23</div>
+                            <div class="font-size14">Sept</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end event block -->
+
+        </div>
+    </section>
+
+    <!-- Stylized calendar -->
+    <section class="page-section bg-primary" id="resource">
+        <div class="container px-2 px-lg-5">
+            <div class="row gx-2 gx-lg-5 justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="text-white mb-2 mt-0">Calendar</h2>
+                    <iframe class="fade-element mt-3" src="https://embed.styledcalendar.com/#TtJRu36zInEUB3K4EIMv"
+                        title="Styled Calendar" class="styled-calendar-container"
+                        style="width: 100%; height: 700px; border: none;" data-cy="calendar-embed-iframe"></iframe>
+                    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign up card -->
+    <section class="page-section bg-dark text-white fade-container" id="in">
+        <div class="container p-0 px-lg-5 text-center fade-element">
+            <h2 class="m-4">Volunteer & Give</h2>
+            <h4 class="m-2">Tithe & donations are payable by check, cash, or Zelle.</h4>
+            <P class="text-white-75 m-3"><strong>THANK YOU!</strong></P>
+            <a class="btn btn-light btn-xl" href="https://forms.gle/36ewGtsj7Pd4szBR8">Volunteer with Us<br><i
+                    class="bi bi-box-arrow-up-right" style="font-size: large;"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-black py-5">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="m-2 text-white">Want to know what's coming up?</h2>
+            <p class="text-white-75 mb-4">Join our growing church family!</p>
+            <a class="btn btn-light btn-xl" href="https://forms.gle/zmkp734vvRCna5kY7">Sign up here<br><i
+                    class="bi bi-box-arrow-up-right" style="font-size: large;"></i></a>
+            <div class="mt-4 small text-center text-light">Copyright &copy; 2023 Sharon Fellowship Church of Dallas
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

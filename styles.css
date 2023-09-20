@@ -11616,8 +11616,22 @@ header.masthead h1 {
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
+}
+
+@media screen and (max-width:600px) {
+    .swiper {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .swiper {
+        width: 82.5%;
+        height: 62.5%;
+    }
 }
 
 .swiper-button-prev {
